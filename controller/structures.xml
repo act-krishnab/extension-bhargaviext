@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE structures SYSTEM "../doc/structures.dtd">
+<structures>
+	<structure id="bhargaviext_main" name="bhargaviext" level="15" group="main">
+		<description />
+		<sections>
+			<section id="bhargaviext_main" name="bhargaviext" url="/bhargaviext/Bhargaviext/index" />
+			<section id="bhargaviext_other" name="Template" url="/bhargaviext/Bhargaviext/templateExample" />
+		</sections>
+	</structure>
+</structures>
