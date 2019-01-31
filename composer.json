@@ -25,7 +25,7 @@
     },
     "autoload" : {
         "psr-4" : {
-            "bhargavi\\bhargaviext\\" : "bhargaviext"
+            "bhargavi\\bhargaviext\\" : ""
         }
     } 
 }
