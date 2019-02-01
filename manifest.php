@@ -42,7 +42,7 @@ return array(
     ),
     'install' => array(
 	'php' => array(
-		/bhargavi/bhargaviext/scripts/install/RegisterItemUpdateEvent::class,
+		bhargavi\bhargaviext\scripts\install\RegisterItemUpdateEvent::class,
 	),
 	'rdf' => array(
 		__DIR__ . '/scripts/install/count.rdf',
