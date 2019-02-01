@@ -31,7 +31,7 @@ return array(
     'label' => 'bhargaviext',
     'description' => '',
     'license' => 'GPL-2.0',
-    'version' => '0.1.0',
+    'version' => '0.2.0',
     'author' => 'bhargavi krishnamachari',
     'requires' => array(
         'tao' => '>=24.3.0'
@@ -40,9 +40,10 @@ return array(
     'acl' => array(
         array('grant', 'http://www.tao.lu/Ontologies/generis.rdf#bhargaviextManager', array('ext'=>'bhargaviext')),
     ),
+    'update' => bhargavi\bhargaviext\scripts\update\Updater::class,
     'install' => array(
 	'php' => array(
-		/bhargavi/bhargaviext/scripts/install/RegisterItemUpdateEvent::class,
+		bhargavi\bhargaviext\scripts\install\RegisterItemUpdateEvent::class,
 	),
 	'rdf' => array(
 		__DIR__ . '/scripts/install/count.rdf',
