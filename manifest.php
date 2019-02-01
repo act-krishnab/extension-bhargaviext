@@ -22,6 +22,10 @@
 /**
  * Generated using taoDevTools 4.1.1
  */
+
+
+ new bhargavi\bhargaviext\model\SaveCounterService();
+
 return array(
     'name' => 'bhargaviext',
     'label' => 'bhargaviext',
@@ -37,6 +41,12 @@ return array(
         array('grant', 'http://www.tao.lu/Ontologies/generis.rdf#bhargaviextManager', array('ext'=>'bhargaviext')),
     ),
     'install' => array(
+	'php' => array(
+		/bhargavi/bhargaviext/scripts/install/RegisterItemUpdateEvent::class,
+	),
+	'rdf' => array(
+		__DIR__ . '/scripts/install/count.rdf',
+	),
     ),
     'uninstall' => array(
     ),
